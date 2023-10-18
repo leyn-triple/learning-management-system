@@ -1,8 +1,9 @@
 package com.triple.lms.member.service;
 
 import com.triple.lms.member.model.MemberInput;
+import org.springframework.security.core.userdetails.UserDetailsService;
 
-public interface MemberService {
+public interface MemberService extends UserDetailsService {
 
     boolean register(MemberInput parameter);
 
